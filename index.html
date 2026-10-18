@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>JP Tech Solutions - Iniciar Sesión</title>
-    <!-- Quitamos la barra / inicial para que cargue los CSS correctamente en GitHub Pages -->
     <link rel="stylesheet" href="public/css/styles.css">
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="login-body">
     <div class="login-card">
         <h2>JP <span>Tech Solutions</span></h2>
         <p>Ingresa tus credenciales de acceso</p>
-        <!-- Hacemos que el formulario envíe directamente a dashboard.html -->
-        <form action="./dashboard.html" method="GET"></form>
+        <form action="dashboard.html" method="GET">
             <div class="form-group">
                 <label for="usuario">Usuario</label>
                 <input type="text" id="usuario" placeholder="admin" required>
