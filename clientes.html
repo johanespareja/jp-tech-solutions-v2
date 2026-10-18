@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - JP Tech Solutions</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <aside class="sidebar">
+    <div>
+        <!-- Logo de JP Tech Solutions -->
+        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 2rem;">
+            <img src="/img/logo.png" alt="JP Tech Solutions Logo" style="height: 40px; width: auto; object-fit: contain;">
+            <div style="display: flex; flex-direction: column; line-height: 1.1;">
+                <span style="font-size: 1.1rem; font-weight: 700; color: #ffffff;">JP Tech</span>
+                <span style="font-size: 0.65rem; color: #2563eb; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Solutions</span>
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            ...
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/dashboard" class="nav-link">📊 Dashboard</a></li>
+                <li class="nav-item"><a href="/ventas" class="nav-link">💼 Ventas</a></li>
+                <li class="nav-item"><a href="/clientes" class="nav-link active">👥 Clientes</a></li>
+                <li class="nav-item"><a href="/productos" class="nav-link">📦 Productos</a></li>
+                <li class="nav-item"><a href="/reportes" class="nav-link">📈 Reportes</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="#" class="nav-link" id="logoutBtn" style="color: #f87171;">🚪 Cerrar Sesión</a>
+        </div>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <div>
+                <h1>Gestión de Clientes</h1>
+                <p style="color: var(--text-secondary);">Directorio de clientes registrados y contactos</p>
+            </div>
+            <div><strong>Johanes Pareja Vidales</strong></div>
+        </header>
+
+        <section class="metrics-grid">
+            <div class="metric-card"><h3>Total Clientes</h3><div class="value">248</div></div>
+            <div class="metric-card"><h3>Clientes Activos</h3><div class="value">210</div></div>
+            <div class="metric-card"><h3>Nuevos este Mes</h3><div class="value">24</div></div>
+            <div class="metric-card"><h3>Satisfacción</h3><div class="value">98%</div></div>
+        </section>
+
+        <section class="data-table-container">
+            <h2>Lista de Clientes</h2>
+            <br>
+            <table>
+                <thead>
+                    <tr><th>ID</th><th>Nombre / Empresa</th><th>Correo Electrónico</th><th>Teléfono</th><th>Ciudad</th><th>Estado</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>#CLI-01</td><td>Carlos Gómez</td><td>carlos.gomez@email.com</td><td>+57 300 123 4567</td><td>Medellín</td><td><span class="badge badge-success">Activo</span></td></tr>
+                    <tr><td>#CLI-02</td><td>María Rodríguez</td><td>m.rodriguez@email.com</td><td>+57 311 987 6543</td><td>Bogotá</td><td><span class="badge badge-success">Activo</span></td></tr>
+                    <tr><td>#CLI-03</td><td>Empresa Alfa SAS</td><td>contacto@alfasas.com</td><td>+57 320 456 7890</td><td>Cali</td><td><span class="badge badge-warning">Inactivo</span></td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes - JP Tech Solutions</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <aside class="sidebar">
+    <div>
+        <!-- Logo de JP Tech Solutions -->
+        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 2rem;">
+            <img src="/img/logo.png" alt="JP Tech Solutions Logo" style="height: 40px; width: auto; object-fit: contain;">
+            <div style="display: flex; flex-direction: column; line-height: 1.1;">
+                <span style="font-size: 1.1rem; font-weight: 700; color: #ffffff;">JP Tech</span>
+                <span style="font-size: 0.65rem; color: #2563eb; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Solutions</span>
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            ...
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/dashboard" class="nav-link">📊 Dashboard</a></li>
+                <li class="nav-item"><a href="/ventas" class="nav-link">💼 Ventas</a></li>
+                <li class="nav-item"><a href="/clientes" class="nav-link">👥 Clientes</a></li>
+                <li class="nav-item"><a href="/productos" class="nav-link">📦 Productos</a></li>
+                <li class="nav-item"><a href="/reportes" class="nav-link active">📈 Reportes</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="#" class="nav-link" id="logoutBtn" style="color: #f87171;">🚪 Cerrar Sesión</a>
+        </div>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="top-header">
+            <div>
+                <h1>Reportes y Analítica</h1>
+                <p style="color: var(--text-secondary);">Análisis financiero y métricas de desempeño</p>
+            </div>
+            <div><strong>Johanes Pareja Vidales</strong></div>
+        </header>
+
+        <section class="metrics-grid">
+            <div class="metric-card"><h3>Ingresos Anuales</h3><div class="value">$182,400,000</div></div>
+            <div class="metric-card"><h3>Crecimiento Anual</h3><div class="value">+24.5%</div></div>
+            <div class="metric-card"><h3>Margen Neto</h3><div class="value">38%</div></div>
+            <div class="metric-card"><h3>Retención Clientes</h3><div class="value">92%</div></div>
+        </section>
+
+        <section class="data-table-container">
+            <h2>Resumen de Reportes Generados</h2>
+            <br>
+            <table>
+                <thead>
+                    <tr><th>Tipo de Reporte</th><th>Período</th><th>Fecha Generación</th><th>Formato</th><th>Estado</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Reporte Financiero Trimestral</td><td>Q3 - 2026</td><td>10/10/2026</td><td>PDF / Excel</td><td><span class="badge badge-success">Completado</span></td></tr>
+                    <tr><td>Balance de Inventario</td><td>Mensual</td><td>01/10/2026</td><td>PDF</td><td><span class="badge badge-success">Completado</span></td></tr>
+                    <tr><td>Auditoría de Clientes Activos</td><td>Anual</td><td>15/09/2026</td><td>Excel</td><td><span class="badge badge-success">Completado</span></td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
