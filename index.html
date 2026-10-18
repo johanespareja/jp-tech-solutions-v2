@@ -9,7 +9,7 @@
     <div class="login-card">
         <h2>JP <span>Tech Solutions</span></h2>
         <p>Ingresa tus credenciales de acceso</p>
-        <form action="dashboard.html" method="GET">
+        <form id="loginForm">
             <div class="form-group">
                 <label for="usuario">Usuario</label>
                 <input type="text" id="usuario" placeholder="admin" required>
@@ -21,5 +21,12 @@
             <button type="submit" class="btn-primary">Ingresar al Sistema</button>
         </form>
     </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que el formulario recargue la página o busque rutas de servidor
+            window.location.href = 'dashboard.html'; // Redirige exactamente a dashboard.html en la misma carpeta
+        });
+    </script>
 </body>
 </html>
