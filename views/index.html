@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>JP Tech Solutions - Iniciar Sesión</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Quitamos la barra / inicial para que cargue los CSS correctamente en GitHub Pages -->
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="login-body">
     <div class="login-card">
         <h2>JP <span>Tech Solutions</span></h2>
         <p>Ingresa tus credenciales de acceso</p>
-        <form id="loginForm">
+        <!-- Hacemos que el formulario envíe directamente a dashboard.html -->
+        <form action="dashboard.html" method="GET">
             <div class="form-group">
                 <label for="usuario">Usuario</label>
                 <input type="text" id="usuario" placeholder="admin" required>
@@ -19,9 +22,7 @@
                 <input type="password" id="password" placeholder="12345" required>
             </div>
             <button type="submit" class="btn-primary">Ingresar al Sistema</button>
-            <p id="errorMsg" style="color: #ef4444; font-size: 0.85rem; margin-top: 1rem; display: none;"></p>
         </form>
     </div>
-    <script src="/js/auth.js"></script>
 </body>
 </html>
